@@ -1,0 +1,9 @@
+Hash Tables and Their Applications
+
+Hash tables are one of the most efficient data structures for key-value storage. They achieve this efficiency through a hash function that converts keys into array indices. A good hash function distributes keys uniformly across the array to minimize collisions.
+
+Collision resolution is important when two keys hash to the same index. Common strategies include chaining (using linked lists) and open addressing (probing for the next available slot). The choice of collision resolution method affects performance characteristics.
+
+Hash tables have numerous applications in computer science. They are used in database indexing, caching systems, compilers, and search algorithms. The inverted index in search engines uses hash tables to map terms to posting lists efficiently.
+
+Performance analysis shows that hash tables provide O(1) average-case complexity for insertions, deletions, and lookups. However, worst-case performance can degrade to O(n) if many collisions occur or the hash function is poorly designed.

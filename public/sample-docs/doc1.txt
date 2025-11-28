@@ -1,0 +1,7 @@
+Introduction to Data Structures and Algorithms
+
+Data structures are fundamental components in computer science that organize and store data efficiently. Understanding data structures is essential for writing efficient code and solving complex problems. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+
+Algorithms are step-by-step procedures for solving problems and performing computations. The efficiency of an algorithm is measured by its time and space complexity. Good algorithms can make the difference between a program that runs in seconds versus hours.
+
+Hash tables are particularly useful for fast data retrieval. They use a hash function to map keys to values, providing average O(1) lookup time. This makes them ideal for implementing inverted indexes in search engines.

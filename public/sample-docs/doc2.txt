@@ -1,0 +1,7 @@
+Search Engines and Information Retrieval
+
+Modern search engines rely on sophisticated data structures to provide fast and relevant results. The inverted index is the backbone of most search engines, including Google and Elasticsearch. An inverted index maps terms to the documents that contain them.
+
+Information retrieval systems use various ranking algorithms to determine the relevance of documents. TF-IDF (Term Frequency-Inverse Document Frequency) is a popular method that weighs the importance of terms in documents. Terms that appear frequently in a document but rarely across all documents receive higher scores.
+
+Boolean search allows users to combine terms with operators like AND, OR, and NOT. This provides precise control over search queries and is commonly used in academic databases and legal research systems.

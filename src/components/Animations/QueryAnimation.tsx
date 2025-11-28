@@ -25,8 +25,8 @@ export function QueryAnimation({ query, matchedDocs }: QueryAnimationProps) {
     return (
       <Card title="Animação de Processamento">
         <p className="text-gray-600">
-          Realize uma busca no módulo anterior para ver a animação do
-          processamento.
+          Realize uma busca no <strong>módulo anterior</strong> para ver a
+          animação do processamento.
         </p>
       </Card>
     );

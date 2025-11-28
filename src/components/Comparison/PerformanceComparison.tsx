@@ -107,13 +107,14 @@ export function PerformanceComparison({
         </div>
 
         <p className="text-xs text-gray-400 mt-2">
-          Obs: Gerar muitas centenas ou milhares de documentos pode levar alguns
-          segundos e consumir CPU no navegador.
+          ⚠️ Obs: Gerar muitas centenas de documentos pode levar alguns segundos
+          e consumir CPU no navegador, aguarde até que a ação seja concluída,
+          evite recarregar a página ⚠️.
         </p>
 
         {results && (
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Linear Search Results */}
+            {/* Linear SearchResults */}
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
               <h4 className="text-lg font-bold text-red-700 mb-3">
                 🐌 Busca Linear

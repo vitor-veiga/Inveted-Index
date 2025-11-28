@@ -151,10 +151,10 @@ export function Sidebar({
       {isOpen && (
         <>
           <div
-            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
             onClick={toggleSidebar}
           />
-          <aside className="lg:hidden fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] z-50 animate-slide-in">
+          <aside className="lg:hidden fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] z-40 animate-slide-in">
             {sidebarContent}
           </aside>
         </>

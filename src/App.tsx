@@ -346,7 +346,7 @@ function App() {
         onModuleSelect={setActiveModule}
         completedModules={completedModules}
       />
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50">
         <ProgressBar
           current={completedModules.size}
           total={totalModules}

@@ -61,7 +61,7 @@ export function ModuleLayout({
             <div className="mt-6">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-semibold text-gray-600">
-                  Progresso do Curso
+                  Progresso do Aprendizado
                 </span>
                 <span className="text-xs font-semibold text-indigo-600">
                   {Math.round((moduleNumber / totalModules) * 100)}%

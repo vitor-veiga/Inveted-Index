@@ -78,7 +78,7 @@ export function AnimationModule({
           ].map((item) => (
             <div
               key={item.step}
-              className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-colors"
+              className="text-center p-4 bg-linear-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-colors"
             >
               <div className="text-3xl mb-2">{item.icon}</div>
               <div className="text-xs font-bold text-blue-600 mb-1">

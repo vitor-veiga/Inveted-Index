@@ -43,24 +43,26 @@ export function AnimationModule({
           Esta animação mostra exatamente o que acontece quando você faz uma
           busca. Acompanhe cada etapa do processamento:
         </p>
-        <div className="grid md:grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-5 gap-3">
           {[
-            { step: "1", label: "Parse", desc: "Analisa a consulta" },
-            { step: "2", label: "Lookup", desc: "Busca no índice" },
-            { step: "3", label: "Combine", desc: "Aplica operadores" },
-            { step: "4", label: "Result", desc: "Retorna documentos" },
+            { step: "1", label: "Parse", desc: "Analisa a consulta", icon: "📝" },
+            { step: "2", label: "Hash", desc: "Calcula hash dos termos", icon: "🔢" },
+            { step: "3", label: "Retrieve", desc: "Busca posting lists", icon: "🗂️" },
+            { step: "4", label: "Merge", desc: "Combina resultados", icon: "🔗" },
+            { step: "5", label: "Complete", desc: "Retorna documentos", icon: "✅" },
           ].map((item) => (
             <div
               key={item.step}
-              className="text-center p-4 bg-gray-50 rounded-xl border border-gray-200"
+              className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-colors"
             >
-              <div className="w-10 h-1 border-20 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-2 font-bold">
-                <span className="text-slate-300">{item.step}</span>
+              <div className="text-3xl mb-2">{item.icon}</div>
+              <div className="text-xs font-bold text-blue-600 mb-1">
+                Passo {item.step}
               </div>
-              <div className="font-bold text-sm text-gray-900">
+              <div className="font-bold text-sm text-gray-900 mb-1">
                 {item.label}
               </div>
-              <div className="text-xs text-gray-600 mt-1">{item.desc}</div>
+              <div className="text-xs text-gray-600">{item.desc}</div>
             </div>
           ))}
         </div>

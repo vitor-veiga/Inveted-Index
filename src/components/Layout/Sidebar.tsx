@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
-import { BookOpen, Menu, X, CheckCircle } from "lucide-react";
+import { BookOpen, Menu, CheckCircle } from "lucide-react";
 
 export interface LearningModule {
   id: string;
@@ -137,7 +137,7 @@ export function Sidebar({
       {!isOpen && (
         <button
           onClick={toggleSidebar}
-          className="lg:hidden fixed top-20 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          className="lg:hidden fixed top-20 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-11 min-h-11 flex items-center justify-center"
           aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
         >
           <Menu className="w-6 h-6" />

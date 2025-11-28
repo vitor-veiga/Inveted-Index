@@ -140,6 +140,88 @@ export function PerformanceModule({
           Análise de Complexidade
         </h3>
 
+        {/* Explicação detalhada do O(1) */}
+        <div className="mb-6 p-6 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-xl">
+          <h4 className="text-lg font-bold text-green-800 mb-3 flex items-center gap-2">
+            <span className="text-2xl">🎯</span>
+            Por que O(1) para busca?
+          </h4>
+          <div className="space-y-4">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                1
+              </div>
+              <div>
+                <p className="font-bold text-green-800 mb-1">Hash Function (Tempo Constante)</p>
+                <p className="text-sm text-green-700">
+                  A função hash <code className="bg-green-100 px-2 py-0.5 rounded">hash(termo)</code> processa 
+                  caractere por caractere e retorna um índice. Como o tamanho dos termos de busca é 
+                  geralmente limitado (ex: palavras com ~10-20 caracteres), isso é considerado O(1).
+                </p>
+                <div className="mt-2 p-3 bg-white rounded-lg border border-green-200">
+                  <code className="text-xs text-green-800">
+                    hash("data") → 743 <span className="text-gray-500">// sempre rápido, independente de n</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                2
+              </div>
+              <div>
+                <p className="font-bold text-green-800 mb-1">Acesso Direto à Hash Table (Tempo Constante)</p>
+                <p className="text-sm text-green-700">
+                  Com o índice calculado, acessamos diretamente a posição na tabela: 
+                  <code className="bg-green-100 px-2 py-0.5 rounded">table[743]</code>. 
+                  Acesso a array por índice é sempre O(1), não importa o tamanho da tabela.
+                </p>
+                <div className="mt-2 p-3 bg-white rounded-lg border border-green-200">
+                  <code className="text-xs text-green-800">
+                    table[743] → PostingList <span className="text-gray-500">// acesso instantâneo</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                3
+              </div>
+              <div>
+                <p className="font-bold text-green-800 mb-1">Posting List (Já Pré-calculada)</p>
+                <p className="text-sm text-green-700">
+                  A posting list já contém todos os documentos com aquele termo. Não precisa 
+                  percorrer nenhum documento - apenas retorna a lista pronta!
+                </p>
+                <div className="mt-2 p-3 bg-white rounded-lg border border-green-200">
+                  <code className="text-xs text-green-800">
+                    PostingList → [doc1, doc3, doc7] <span className="text-gray-500">// retorno imediato</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 bg-green-600 rounded-xl text-white">
+              <p className="font-bold text-lg mb-2">✨ Resultado:</p>
+              <p className="text-sm">
+                Como nenhuma das operações depende do número total de documentos (n), 
+                a complexidade é <strong>O(1) médio</strong>. 
+                Buscar em 100 ou 1.000.000 de documentos leva praticamente o mesmo tempo!
+              </p>
+            </div>
+
+            <div className="p-4 bg-yellow-50 rounded-xl border border-yellow-300">
+              <p className="font-bold text-yellow-800 mb-2">⚠️ Observação - Pior Caso:</p>
+              <p className="text-sm text-yellow-700">
+                No pior caso (muitas colisões na hash table), a complexidade pode degradar para O(n). 
+                Mas com uma boa função hash e fator de carga adequado, isso é extremamente raro na prática.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-700 border border-gray-200 rounded-xl">
             <thead className="bg-gray-50">

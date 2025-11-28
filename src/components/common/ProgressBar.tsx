@@ -47,7 +47,7 @@ export function ProgressBar({ current, total, onReset }: ProgressBarProps) {
           {current > 0 && (
             <button
               onClick={handleReset}
-              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-200 border border-gray-300 group min-h-[40px]"
+              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-200 border border-gray-300 group min-h-10"
               title="Reiniciar progresso"
             >
               <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />

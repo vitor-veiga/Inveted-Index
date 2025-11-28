@@ -11,7 +11,7 @@ export function useAnimation(query: string, matchedDocs: string[]) {
 
   const [currentStep, setCurrentStep] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [speed, setSpeed] = useState<number>(1000); // milliseconds per step
+  const [speed, setSpeed] = useState<number>(3000); // milliseconds per step
 
   const play = useCallback(async () => {
     if (steps.length === 0 || isPlaying) return;

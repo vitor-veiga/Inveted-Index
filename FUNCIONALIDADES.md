@@ -9,6 +9,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 ## 🗂️ Estrutura Modular (8 Módulos)
 
 ### 📖 Módulo 1: Introdução
+
 **O que é um Índice Invertido?**
 
 - ✅ Conceitos fundamentais e motivação
@@ -20,6 +21,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Timeline histórica
 
 ### 🔍 Módulo 2: Busca Interativa
+
 **Experimente fazer buscas!**
 
 - ✅ Interface de busca com query input
@@ -31,6 +33,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Resultados em tempo real
 
 ### 📊 Módulo 3: Visualização do Índice
+
 **Veja como os dados são organizados**
 
 - ✅ Tabela completa do índice invertido
@@ -42,9 +45,11 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Estatísticas da hash table (colisões, fator de carga)
 
 ### 🎬 Módulo 4: Animação de Consulta
+
 **Veja o processamento passo-a-passo**
 
 - ✅ **5 passos animados:**
+
   1. **Parse** (📝): Tokenização da query
   2. **Hash** (🔢): Cálculo de hash para cada termo
   3. **Retrieve** (🗂️): Busca das posting lists
@@ -52,12 +57,14 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   5. **Complete** (✅): Retorno dos documentos
 
 - ✅ Controles de reprodução:
+
   - ▶️ Play automático
   - ⏸️ Pause
   - ← Anterior / Próximo →
   - 🔄 Reiniciar
 
 - ✅ Visualizações interativas:
+
   - Fluxo de dados com setas animadas
   - Cards com gradientes e animações CSS
   - Ícones ilustrativos para cada operação
@@ -71,9 +78,11 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Animações de bounce, fade-in, slide-up
 
 ### ⚡ Módulo 5: Performance e Complexidade
+
 **Por que é tão rápido?**
 
 - ✅ **Explicação detalhada de O(1):**
+
   - 3 passos numerados e ilustrados
   - Hash function (tempo constante)
   - Acesso direto à hash table
@@ -82,6 +91,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Comparação com O(n×m) da busca linear
 
 - ✅ **Comparação interativa:**
+
   - Input de query personalizada
   - Seletor de tamanho de dataset (1k, 5k, 10k, 50k docs)
   - Medição em tempo real:
@@ -93,6 +103,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Cards comparativos lado a lado
 
 - ✅ **Tabela de complexidade:**
+
   - Busca: O(n×m) vs O(1)
   - Inserção: O(1) vs O(m)
   - Espaço: O(n×m) vs O(n×m+t)
@@ -103,9 +114,11 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Desvantagens (memória, indexação inicial)
 
 ### 📈 Módulo 6: Ranking TF-IDF
+
 **Como ordenar resultados por relevância?**
 
 - ✅ **Teoria completa:**
+
   - Fórmula de Term Frequency (TF)
   - Fórmula de Inverse Document Frequency (IDF)
   - IDF suavizado: `log((N+1)/(df+1)) + 1`
@@ -113,6 +126,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Score para múltiplos termos
 
 - ✅ **Exemplos práticos:**
+
   - Cálculo passo-a-passo ilustrado
   - Cards coloridos por etapa
   - Valores numéricos reais
@@ -120,6 +134,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Tabela de soma de scores
 
 - ✅ **Demonstração interativa:**
+
   - Input de query customizada
   - Tabela de ranking ao vivo
   - Colunas: Posição, Doc ID, Score, Título
@@ -133,24 +148,29 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Baeza-Yates & Ribeiro-Neto (2011)
 
 ### 🌍 Módulo 7: Aplicações Reais
+
 **Onde é usado no mundo real?**
 
 - ✅ **Motores de Busca:**
+
   - Google, Bing, DuckDuckGo
   - Funcionamento interno
   - Escala de bilhões de documentos
 
 - ✅ **Sistemas Enterprise:**
+
   - Elasticsearch (busca distribuída)
   - Apache Solr (busca open-source)
   - Amazon CloudSearch
 
 - ✅ **Bancos de Dados:**
+
   - PostgreSQL Full-Text Search
   - MongoDB Text Indexes
   - MySQL FULLTEXT
 
 - ✅ **E-commerce:**
+
   - Amazon (busca de produtos)
   - Catálogos online
   - Recomendações
@@ -160,9 +180,11 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Desafios práticos (atualizações, distribuição)
 
 ### 💻 Módulo 8: Implementação em C
+
 **Veja o código real!**
 
 - ✅ **6 seções de código:**
+
   1. Estruturas de dados (PostingNode, HashEntry, InvertedIndex)
   2. Função hash DJB2
   3. Inserção com chaining
@@ -171,18 +193,21 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   6. Comparação linear vs índice
 
 - ✅ **Navegação por abas:**
+
   - Código completo em C
   - Explicações didáticas
   - Conceitos-chave destacados
   - Análise de complexidade por operação
 
 - ✅ **Quiz educativo:**
+
   - 3 perguntas sobre conceitos
   - Verificação de respostas
   - Feedback explicativo
   - Pontuação final
 
 - ✅ **Download de arquivos:**
+
   - `inverted_index_hash.c` (450+ linhas)
   - `README.md` (documentação)
   - Botões de visualizar e download
@@ -198,6 +223,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 ## 🎨 Recursos de UI/UX
 
 ### 🎯 Design Responsivo
+
 - ✅ Mobile-first approach
 - ✅ Breakpoints: sm (640px), lg (1024px)
 - ✅ Botões com touch targets 44px mínimo
@@ -208,6 +234,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Menu hamburguer responsivo
 
 ### 🎨 Sistema de Cores (Tema Claro)
+
 - ✅ Background: gradientes suaves (blue-50 → indigo-50 → purple-50)
 - ✅ Cards brancos com shadow-xl
 - ✅ Bordas: gray-200
@@ -216,6 +243,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Feedback: green (sucesso), yellow (atenção), red (erro)
 
 ### ✨ Animações CSS
+
 - ✅ `fade-in`: Entrada suave
 - ✅ `slide-in`: Desliza horizontalmente
 - ✅ `slide-up`: Desliza verticalmente
@@ -227,7 +255,9 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
 - ✅ Transições suaves (duration-300, ease-in-out)
 
 ### 🧭 Navegação
+
 - ✅ **Sidebar fixo (desktop):**
+
   - Lista de 8 módulos
   - Ícones do Lucide React
   - Estado ativo destacado (gradiente)
@@ -235,6 +265,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Progress bar geral
 
 - ✅ **Sidebar mobile:**
+
   - Botão hamburguer flutuante (z-50)
   - Overlay semitransparente (z-30)
   - Panel deslizante (z-40)
@@ -242,6 +273,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Fecha ao selecionar módulo
 
 - ✅ **Progress Bar sticky:**
+
   - Sempre visível no topo (sticky top-0 z-20)
   - Percentual de conclusão
   - Botão de reset com confirmação
@@ -254,6 +286,7 @@ Plataforma educacional interativa desenvolvida em **React + TypeScript** para en
   - Stack vertical em mobile
 
 ### 🎯 Componentes Reutilizáveis
+
 - ✅ `Card`: Container padronizado com título
 - ✅ `Button`: Variantes (primary, secondary)
 - ✅ `Tabs`: Navegação por abas
@@ -331,6 +364,7 @@ src/
 ### 🔧 Tecnologias Utilizadas
 
 **Frontend:**
+
 - ⚛️ React 19.2.0
 - 📘 TypeScript 5.9.3
 - 🎨 Tailwind CSS 4.1.17
@@ -338,22 +372,26 @@ src/
 - 🎭 Lucide React (ícones)
 
 **Estruturas de Dados:**
+
 - 🗂️ Hash Table com chaining
 - 📋 Linked Lists para posting lists
 - 🔍 Índice invertido completo
 - 📊 Map/Set do JavaScript
 
 **Persistência:**
+
 - 💾 LocalStorage (progresso do usuário)
 - 🔑 Key: `"learning-progress"`
 - 📦 Dados: `{ completed: string[], activeModule: string }`
 
 **Performance:**
+
 - ⏱️ `performance.now()` para medições precisas
 - 🚀 Geração sintética de datasets (1k-50k docs)
 - 📈 Comparação em tempo real
 
 **Deploy:**
+
 - 🔷 Vercel (CI/CD automático)
 - 🌐 URL: https://inverted-index-platform-bvmzeqp9g.vercel.app
 - 🔄 Deploy automático a cada push no GitHub
@@ -363,6 +401,7 @@ src/
 ## 📊 Dados e Exemplos
 
 ### 📚 Dataset
+
 - ✅ 30 documentos educacionais
 - ✅ Tópicos: estruturas de dados, algoritmos, IA, busca
 - ✅ Conteúdo rico (200-400 palavras por doc)
@@ -370,6 +409,7 @@ src/
 - ✅ IDs únicos (doc1, doc2, ...)
 
 ### 🔍 Queries de Exemplo
+
 - `"estruturas dados"`
 - `"algoritmos busca"`
 - `"machine learning"`
@@ -378,6 +418,7 @@ src/
 - `"complexidade tempo"`
 
 ### 🧮 Métricas Calculadas
+
 - **TF (Term Frequency):** `freq / totalTermsInDoc`
 - **IDF (Inverse Doc Freq):** `log((N+1)/(df+1)) + 1` (suavizado)
 - **TF-IDF:** `TF × IDF`
@@ -389,6 +430,7 @@ src/
 ## 🎓 Objetivos Pedagógicos
 
 ### 🎯 Aprendizagem Progressiva
+
 1. **Introdução:** Conceitos fundamentais
 2. **Prática:** Busca interativa hands-on
 3. **Visualização:** Ver estrutura interna
@@ -399,6 +441,7 @@ src/
 8. **Implementação:** Código real em C
 
 ### 📖 Conceitos Cobertos
+
 - ✅ Tokenização e normalização de texto
 - ✅ Funções hash (DJB2)
 - ✅ Tratamento de colisões (chaining)
@@ -413,6 +456,7 @@ src/
 - ✅ Implementação em linguagem de baixo nível
 
 ### 🎯 Interatividade
+
 - ✅ Busca ao vivo
 - ✅ Animações controladas pelo usuário
 - ✅ Geração de datasets customizados
@@ -426,12 +470,14 @@ src/
 ## 🚀 Features Técnicas Avançadas
 
 ### 🔐 Tokenização Unificada
+
 - ✅ Função compartilhada em `textProcessing.ts`
 - ✅ Lowercase, remoção de pontuação, split por espaço
 - ✅ Usada por: InvertedIndex, LinearSearch, TFIDF, QueryParser
 - ✅ Garante consistência de resultados
 
 ### ⚡ Otimizações de Performance
+
 - ✅ Memoização de steps de animação (`useMemo`)
 - ✅ Callbacks otimizados (`useCallback`)
 - ✅ Evita re-renders desnecessários
@@ -439,6 +485,7 @@ src/
 - ✅ Hash table com fator de carga controlado
 
 ### 🐛 Tratamento de Edge Cases
+
 - ✅ Query vazia → feedback apropriado
 - ✅ Termo não encontrado → lista vazia
 - ✅ Tempo < 0.001ms → "muito rápido para medir"
@@ -446,6 +493,7 @@ src/
 - ✅ IDF = 0 → suavização aplicada
 
 ### ♿ Acessibilidade
+
 - ✅ `aria-label` em botões importantes
 - ✅ Touch targets 44px mínimo
 - ✅ Contraste de cores adequado (WCAG AA)
@@ -457,11 +505,13 @@ src/
 ## 📱 Responsividade
 
 ### 📐 Breakpoints
+
 - **Mobile:** < 640px
-- **Tablet:** 640px - 1024px  
+- **Tablet:** 640px - 1024px
 - **Desktop:** > 1024px
 
 ### 🎨 Adaptações Mobile
+
 - ✅ Sidebar → Menu hamburguer
 - ✅ Grid multi-coluna → Stack vertical
 - ✅ Texto grande → Texto menor
@@ -475,18 +525,21 @@ src/
 ## 🔄 Sistema de Progresso
 
 ### 💾 Persistência
+
 - ✅ LocalStorage automático
 - ✅ Salva módulos completados
 - ✅ Salva módulo ativo atual
 - ✅ Restaura ao recarregar página
 
 ### 🎯 Tracking
+
 - ✅ Checkmarks verdes nos módulos concluídos
 - ✅ Progress bar no topo (sticky)
 - ✅ Percentual calculado em tempo real
 - ✅ Botão de reset com confirmação
 
 ### 🔔 Feedback Visual
+
 - ✅ Animação ao completar módulo
 - ✅ Cores de destaque (verde para concluído)
 - ✅ Ícones de status
@@ -497,12 +550,14 @@ src/
 ## 📦 Build e Deploy
 
 ### 🏗️ Build Local
+
 ```bash
 npm run build     # Gera dist/
 npm run preview   # Preview local do build
 ```
 
 ### 🚀 Deploy Automático (Vercel)
+
 - ✅ Conectado ao GitHub
 - ✅ Deploy a cada push na branch `main`
 - ✅ Preview URLs para PRs
@@ -511,6 +566,7 @@ npm run preview   # Preview local do build
 - ✅ Output directory: `dist`
 
 ### 🌐 Domínio
+
 - **Produção:** https://inverted-index-platform-bvmzeqp9g.vercel.app
 - **Repositório:** https://github.com/vitor-veiga/Inveted-Index
 
@@ -519,17 +575,20 @@ npm run preview   # Preview local do build
 ## 🎨 Paleta de Cores
 
 ### 🎯 Cores Principais
+
 - **Primary:** Blue 600 (#2563eb)
 - **Secondary:** Indigo 600 (#4f46e5)
 - **Accent:** Purple 600 (#9333ea)
 
 ### 📊 Cores Funcionais
+
 - **Success:** Green 600 (#16a34a)
 - **Warning:** Yellow 600 (#ca8a04)
 - **Error:** Red 600 (#dc2626)
 - **Info:** Blue 500 (#3b82f6)
 
 ### 🖼️ Backgrounds
+
 - **Primary BG:** White (#ffffff)
 - **Secondary BG:** Gray 50 (#f9fafb)
 - **Gradient:** Blue 50 → Indigo 50 → Purple 50
@@ -553,12 +612,14 @@ npm run preview   # Preview local do build
 ## 🎓 Uso Educacional
 
 ### 👨‍🎓 Público-Alvo
+
 - Estudantes de Ciência da Computação
 - Desenvolvedores aprendendo sobre estruturas de dados
 - Profissionais interessados em sistemas de busca
 - Entusiastas de algoritmos
 
 ### 📚 Pode ser usado em:
+
 - Disciplinas de Estruturas de Dados
 - Cursos de Recuperação de Informação
 - Workshops de Algoritmos
@@ -566,6 +627,7 @@ npm run preview   # Preview local do build
 - Demonstrações em palestras
 
 ### 🎯 Diferenciais Pedagógicos
+
 - ✅ 100% visual e interativo
 - ✅ Não requer instalação (web-based)
 - ✅ Progressão gradual de conceitos

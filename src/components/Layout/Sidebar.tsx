@@ -137,7 +137,7 @@ export function Sidebar({
       {!isOpen && (
         <button
           onClick={toggleSidebar}
-          className="lg:hidden fixed top-20 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-11 min-h-11 flex items-center justify-center"
+          className="xl:hidden fixed top-20 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-11 min-h-11 flex items-center justify-center"
           aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
         >
           <Menu className="w-6 h-6" />
@@ -145,7 +145,7 @@ export function Sidebar({
       )}
 
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:block w-80 h-screen fixed left-0 top-0 z-40">
+      <aside className="hidden xl:block w-80 h-screen fixed left-0 top-0 z-40">
         {sidebarContent}
       </aside>
 
@@ -153,10 +153,10 @@ export function Sidebar({
       {isOpen && (
         <>
           <div
-            className="lg:hidden fixed inset-0 bg-transparent bg-opacity-50 z-30"
+            className="xl:hidden fixed inset-0 bg-transparent bg-opacity-50 z-30"
             onClick={toggleSidebar}
           />
-          <aside className="lg:hidden fixed left-0 top-0 bottom-0 w-60 max-w-[85vw] z-40 animate-slide-in">
+          <aside className="xl:hidden fixed left-0 top-0 bottom-0 w-60 max-w-[85vw] z-40 animate-slide-in">
             {sidebarContent}
           </aside>
         </>

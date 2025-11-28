@@ -29,7 +29,7 @@ export function ModuleLayout({
 }: ModuleLayoutProps) {
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50">
-      <div className="max-w-360 mx-auto px-3 sm:px-4 py-13 sm:py-6 lg:py-8 lg:pl-80">
+      <div className="max-w-360 mx-auto px-3 sm:px-4 py-13 xl:py-6 lg:py-8 xl:pl-80">
         {/* Module Header */}
         <div className="mb-4 sm:mb-6 lg:mb-8 animate-fade-in">
           <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 border border-gray-100">

@@ -21,7 +21,7 @@ export function ProgressBar({ current, total, onReset }: ProgressBarProps) {
 
   return (
     <div className="sticky top-0 z-20 bg-white/50 backdrop-blur-xl shadow-md border-b border-gray-200">
-      <div className="max-w-360 mx-auto px-3 sm:px-4 py-2 sm:py-3 lg:pl-80">
+      <div className="max-w-360 mx-auto px-3 sm:px-4 py-2 sm:py-3 xl:pl-80">
         <div className="flex items-center gap-2 sm:gap-4">
           <div className="flex-1">
             <div className="flex items-center justify-between mb-1.5 sm:mb-2">

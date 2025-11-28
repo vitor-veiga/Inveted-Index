@@ -45,11 +45,36 @@ export function AnimationModule({
         </p>
         <div className="grid md:grid-cols-5 gap-3">
           {[
-            { step: "1", label: "Parse", desc: "Analisa a consulta", icon: "📝" },
-            { step: "2", label: "Hash", desc: "Calcula hash dos termos", icon: "🔢" },
-            { step: "3", label: "Retrieve", desc: "Busca posting lists", icon: "🗂️" },
-            { step: "4", label: "Merge", desc: "Combina resultados", icon: "🔗" },
-            { step: "5", label: "Complete", desc: "Retorna documentos", icon: "✅" },
+            {
+              step: "1",
+              label: "Parse",
+              desc: "Analisa a consulta",
+              icon: "📝",
+            },
+            {
+              step: "2",
+              label: "Hash",
+              desc: "Calcula hash dos termos",
+              icon: "🔢",
+            },
+            {
+              step: "3",
+              label: "Retrieve",
+              desc: "Busca posting lists",
+              icon: "🗂️",
+            },
+            {
+              step: "4",
+              label: "Merge",
+              desc: "Combina resultados",
+              icon: "🔗",
+            },
+            {
+              step: "5",
+              label: "Complete",
+              desc: "Retorna documentos",
+              icon: "✅",
+            },
           ].map((item) => (
             <div
               key={item.step}

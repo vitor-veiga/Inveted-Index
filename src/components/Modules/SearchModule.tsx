@@ -284,7 +284,7 @@ function booleanNOT(term1, term2, index) {
       <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
         <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
           <span className="text-2xl">⚙️</span>
-          Como a Busca é Processada
+          Como a Busca é Processada (Simplificado)
         </h3>
         <ol className="space-y-4">
           <li className="flex gap-4">

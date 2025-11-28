@@ -21,7 +21,10 @@ export class TFIDF {
     
     if (docsWithTerm === 0) return 0;
     
-    return Math.log(totalDocs / docsWithTerm);
+    // Smooth IDF: log((N + 1) / (df + 1)) + 1
+    // This prevents zero IDF for terms in all documents
+    // and ensures positive values
+    return Math.log((totalDocs + 1) / (docsWithTerm + 1)) + 1;
   }
 
   // Calculate TF-IDF score for a term in a document

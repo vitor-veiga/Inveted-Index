@@ -134,13 +134,15 @@ export function Sidebar({
   return (
     <>
       {/* Mobile Menu Button */}
-      <button
-        onClick={toggleSidebar}
-        className="lg:hidden fixed top-3 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-        aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
-      >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-      </button>
+      {!isOpen && (
+        <button
+          onClick={toggleSidebar}
+          className="lg:hidden fixed top-20 left-3 z-50 p-2.5 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+        >
+          <Menu className="w-6 h-6" />
+        </button>
+      )}
 
       {/* Desktop Sidebar */}
       <aside className="hidden lg:block w-80 h-screen fixed left-0 top-0 z-40">
@@ -151,10 +153,10 @@ export function Sidebar({
       {isOpen && (
         <>
           <div
-            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
+            className="lg:hidden fixed inset-0 bg-transparent bg-opacity-50 z-30"
             onClick={toggleSidebar}
           />
-          <aside className="lg:hidden fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] z-40 animate-slide-in">
+          <aside className="lg:hidden fixed left-0 top-0 bottom-0 w-60 max-w-[85vw] z-40 animate-slide-in">
             {sidebarContent}
           </aside>
         </>

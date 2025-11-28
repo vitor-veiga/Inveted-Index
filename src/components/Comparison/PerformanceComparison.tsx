@@ -28,7 +28,7 @@ export function PerformanceComparison({
     linear: PerformanceMetrics;
     indexed: PerformanceMetrics;
   } | null>(null);
-  const [size, setSize] = useState<number>(10000);
+  const [size, setSize] = useState<number>(1000);
 
   const handleCompare = async () => {
     if (!query.trim()) return;
@@ -92,9 +92,9 @@ export function PerformanceComparison({
             onChange={(e) => setSize(Number(e.target.value))}
             className="px-3 py-2 border border-gray-300 rounded"
           >
-            <option value={1000}>1.000 documentos</option>
-            <option value={5000}>5.000 documentos</option>
             <option value={10000}>10.000 documentos</option>
+            <option value={5000}>5.000 documentos</option>
+            <option value={1000}>1.000 documentos</option>
           </select>
           <Button
             onClick={handleCompareWithSize}

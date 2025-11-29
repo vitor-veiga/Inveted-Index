@@ -528,7 +528,7 @@ export function CImplementation() {
             <span className="text-xl">📁</span>
             Arquivos do Projeto
           </h4>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-2xl">📄</span>
@@ -592,6 +592,29 @@ export function CImplementation() {
                   ⬇️ Download
                 </a>
               </div>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 border-2 border-purple-300 rounded-lg p-4">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-2xl">📦</span>
+                <div>
+                  <p className="font-bold text-sm text-gray-900">
+                    Pasta Completa
+                  </p>
+                  <p className="text-xs text-gray-600">
+                    Tudo pronto para compilar
+                  </p>
+                </div>
+              </div>
+              <code className="text-xs text-gray-600 block mt-2 mb-3">
+                c-implementation.zip
+              </code>
+              <a
+                href="/c-implementation.zip"
+                download="c-implementation.zip"
+                className="block w-full px-3 py-2 text-xs font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-colors text-center"
+              >
+                📦 Download ZIP
+              </a>
             </div>
           </div>
           <div className="mt-4 p-4 bg-indigo-50 border border-indigo-200 rounded-lg">
